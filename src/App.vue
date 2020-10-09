@@ -60,7 +60,7 @@ export default {
     }
   },
   mounted(){
-    var url = this.HOST + '/api/4/news/latest'
+    var url = '/api/4/news/latest'
     this.$http.get(url)
     .then(res => {
       console.log(res.data);
