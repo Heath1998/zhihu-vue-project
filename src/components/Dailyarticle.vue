@@ -15,7 +15,7 @@ export default{
     },
     methods:{
         getatricle(){
-        let url=this.HOST+ '/api/4/news/'+this.id_data;
+        let url= '/api/4/news/'+this.id_data;
          this.$http.get(url)
         .then(res=>{
             this.news_data=res.data;
